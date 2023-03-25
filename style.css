@@ -1,0 +1,632 @@
+/* start Global Rules */
+.container{
+  max-width: 1070px;
+  margin: 0 auto;
+}
+/*media query*/
+@media all and (min-width: 1024px) and (max-width: 1280px){}
+@media all and (min-width: 768px) and (max-width: 1024px){}
+@media all and (min-width: 480px) and (max-width: 768px){}
+@media all and (max-width: 480px){}
+
+/*font family*/
+  @font-face {
+    font-family: 'Merienda Amita';
+    src: url('path/to/MeriendaAmita-Regular.ttf') format('truetype');
+  }
+  
+  @keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* End Global Rules */
+  /*start header*/
+header {
+  background-color: #0E1329;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  
+}
+.header-float {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.header-float p {
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+}
+.header-float span {
+  font-weight: bold;
+  color: #FF274B;
+  font-size: 20px;
+  font-family: cursive;
+}
+.nav{
+  float: right;
+  
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  
+  
+}
+.nav ul li a{
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-family:georgia ;
+}
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  right: inherit;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 6px;
+  background: #FF274B;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+.nav ul a:hover{
+  color:#FF274B ;
+  cursor: grab;
+}
+/*end header*/
+/*start section home*/
+section.Home {
+  background-color: #0E1329;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image img {
+  display: flex;
+  width: 400px;
+  margin-bottom: -600px;
+  margin-left: 500px;
+  }
+  
+.home-page {
+  padding-top: 100px;
+  line-height: 20px;
+  height:  400px;
+  letter-spacing: 1px;
+
+}
+.home-page h2 span {
+  font-size: 40px;
+  color: #FF274B;
+  font-family: 'Merienda Amita', cursive;
+  font-weight: normal;
+
+}
+.home-page h2,p {
+  font-size: 20px;
+  color: white;
+  font-family:'Merienda Amita', cursive ;
+  
+}
+.home-page p{
+  display: inline-block;
+  text-align: center;
+}
+.home-page p span {
+  font-family:'Merienda Amita', cursive ;
+  font-size: 25px;
+  color: #FF274B;
+  
+}
+.home-page p {
+  margin-left: 100px;
+}
+.home2-page p span {
+  font-family:'Merienda Amita', cursive ;
+  font-size: 25px;
+  color: #FF274B;
+}
+.home2-page p {
+  margin-left: 60px;
+}
+.animation-button {
+  background-color: #FC8307;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  height: 50px;
+  width: 150px;
+  margin-left: 100px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Merienda Amita', cursive;
+  cursor: pointer;
+  animation: example 1s linear infinite;
+}
+
+.social-media {
+    margin-top: -30px;
+  }
+.text1 .text2 {
+  display: inline-block;
+  font-family: 'Merienda Amita', cursive;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #0E1329;
+  transition: all 0.2s ease-out;
+  margin-bottom: 30px;
+}
+
+.text1 .text2:hover {
+  width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  
+}
+.text1 .text2 .text3 {
+  display: inline-block;
+  height: 30px;
+  width: 38px;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 35px;
+  transition: all 0.2 ease-out;
+  padding-bottom: 10px;
+}
+.text1 .text2:nth-child(1):hover .text3{
+  background: #4065b1;
+  
+}
+.text1 .text2:nth-child(2):hover .text3{
+  background: #f60002;
+  
+}
+  .text1 .text2:nth-child(3):hover .text3{
+  background: #d62d65;
+  
+}            
+.text1 .text2:nth-child(4):hover .text3{
+  background: #1c9cea;
+}
+.text1 .text2:nth-child(5):hover .text3{
+  background: #058f2e;
+  
+}
+.text1 .text2 .text3 a {
+  color: #fff;
+  font-size: 25px;
+  line-height: 50px;
+  transition: all 0.2s ease-out;
+}
+.text1 .text2:hover .text3 a {
+  color: white;
+}
+.text1 .text2 span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+.text1 .text2:nth-child(1) span{
+  color: #4065b1;
+  width: 20px;
+}
+.text1 .text2:nth-child(2) span{
+  color: #f60002;
+  
+}
+.text1 .text2:nth-child(3) span{
+  color: #fb3c7c;
+}            
+.text1 .text2:nth-child(4) span{
+  color: #1c9cea;
+  
+}
+.text1 .text2:nth-child(5) span{
+  color: #058f2e;
+}
+/*End section Home*/
+/*start section About*/
+
+.about h2 {
+  text-align: center;
+  font-family:'Merienda Amita', cursive ;
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+.about h2 span{
+  color: #FF274B;
+}
+.mine {
+  background-color: #0E1329;
+  border-radius: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 530px;
+  
+}
+.about-me {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-top: 50px;
+}
+.about-me img {
+  border-radius: 10px;
+  box-shadow: 0 0 15px #fff;
+  
+}
+.about-me h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 27px;
+  
+}
+.about-me h3 span {
+    color: #FF274B;
+}
+.about-me p {
+  font-size: 20px;
+  margin-left: 100px;
+  font-weight: normal;
+  margin-top: 30px;
+  line-height: 40px;
+}
+.call {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+.call label span i {
+  font-size: 25px;
+  padding-right: 15px;
+}
+.call label {
+  flex-basis: 55%;
+  margin-left: 600px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #FF274B;
+  font-family: 'Merienda Amita', cursive ;
+}
+.call label span {
+  color: #fff;
+  font-size: 16px;
+}
+  button {
+    margin-top: -100px;
+    margin-left: 150px;
+
+}
+.myButton {
+  background-color: #FC8307;
+  display: flex;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  box-shadow:  0 0 10px #FC8307;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Merienda Amita', cursive;
+  
+}
+/*End section About*/
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills h2 {
+  text-align: center;
+  font-family:'Merienda Amita', cursive ;
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+.skills h2 span{
+  color: #FF274B;
+}
+.my-skills {
+  background-color: #0E1329;
+  border-radius: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 530px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.my-skills .progress-container {
+  margin-bottom: 25px;
+}
+.my-skills .progress-container h4 {
+  margin:30px 10px;
+  letter-spacing: 2px;
+  color: #FF274B;
+  font-size: 18px;
+  font-family:'Merienda Amita', cursive ;
+
+}
+.my-skills .progress-container .progress-bar {
+  position:relative;
+  width: 500px;
+  height: 40px;
+  border-radius: 30px;
+  background-color:#0E1329;
+  box-shadow:  0 0 10px #FC8307;
+}
+.my-skills .progress-container .progress-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #FC8307;
+  transition: width .5s linear;
+}
+
+/* contact  */
+.contact{
+  width: 100%;
+}
+.contact h2{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family:'Merienda Amita', cursive  ;
+}
+.contact h2 span{
+  color:#FF274B;
+  font-family:'Merienda Amita', cursive ;
+}
+.contact-me {
+  background-color: #0E1329;
+  border-radius: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 450px;
+  padding-top: 50px;
+}
+.contact .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.contact .container .div{
+  margin-bottom: 140px;
+}
+.contact .container .div .hand input{
+  padding: 10px 15px ;
+  margin: 20px 0;
+  width: 500px;
+  outline: none;
+  border-bottom:2px solid #FC8307;
+  box-shadow: 0 0 15px #FC8307;
+  border-radius: 25px;
+  background:#fff;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family:'Merienda Amita', cursive  ;
+  color:#000;
+}
+
+.contact .container .div .hand textarea{
+  outline: none;
+  border-bottom:2px solid #FC8307;
+  box-shadow: 0 0 10px #FC8307;
+  border-radius: 40px;
+  padding: 10px;
+  width: 512px;
+  max-height: 100px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family:'Merienda Amita', cursive ;
+  background-color:#fff;
+  color:#000;
+  margin-top: 20px;
+}
+.main_btn {
+  margin-left: 350px;
+  font-family:'Merienda Amita', cursive;
+  color: #FC8307;
+  cursor: grab;
+  width: 140px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  outline: none;
+  border:#fff;
+  margin-top: 30px;
+}
+.main_btn:hover{
+  transform: translate(0, 10px);
+  -webkit-transform: translate(0, 10px);
+  -moz-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  background-color: #FC8307;
+  color: #fff;
+  
+}
+  .main_btn a{
+  text-decoration: none;
+  color: #0E1329;
+  cursor: grab;
+}
+  .main_btn i{
+  color: #0E1329;
+  margin-left: 5px;
+  cursor: grab;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.main_btn:hover i{
+  transform: translate(10px);
+  -webkit-transform: translate(10px);
+  -moz-transform: translate(10px);
+  -ms-transform: translate(10px);
+  -o-transform: translate(10px);
+  color:#fff;
+}
+.main_btn:hover a{
+  color:#fff;
+}
+.call2 {
+  margin-left: 150px;
+  margin-bottom: 200px;
+  line-height: 100px;
+  font-size: 22px;
+  color: #FF274B;
+  font-family: 'Merienda Amita', cursive ;
+}
+.call2 label span {
+  color: #fff;
+  font-size: 18px;
+}
+.call2 span {
+  color: #fff;
+  padding-right: 20px;
+}
+/*footer*/
+footer{
+  padding: 50px 0  20px;
+  background:#fff;
+  width: 96%;
+  position: absolute;
+  border-radius: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 300px;
+}
+.row{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin: auto;
+  
+}
+.col{
+  text-align: center;
+  padding:  0 150px;
+}
+
+.col h3{
+  margin-bottom: 30px;
+  position: relative;
+  width: fit-content;
+  font-size: 25px;
+  font-family: 'Merienda Amita', cursive;
+  color: #FF274B;
+}
+.col p{
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: 'Merienda Amita', cursive;
+}
+.col a{
+  text-decoration: none;
+  cursor: grab;
+  font-size: 20px;
+}
+.col a p{
+  margin-bottom: 15px;
+  color: #0E1329;
+}
+.col a p:hover{
+  color: #FF274B;
+}
+.col i.fa-brands{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  font-size: 20px;
+  color:#fff;
+  background: #0E1329;
+  margin-right: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/*arrow*/
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  padding:  10px 15px;
+  border-radius: 30px;
+}
+.back-to-top:hover {
+  background-color: #555;
+}
+
+
+
